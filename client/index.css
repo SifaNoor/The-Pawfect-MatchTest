@@ -38,9 +38,29 @@ nav {
 .logo {
     padding:8px 14px;
     letter-spacing: 1px;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 18px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 100;
+    font-style: light;
+    font-size: 20px;
 }
 
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    gap: 7px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+}
+
+.navbar li a{
+    text-decoration: none;
+    /* color:black; */
+    color: white;
+    letter-spacing: 5px;
+    width: 100%;
+    padding: 5px 5px;
+    display: block;
+}
