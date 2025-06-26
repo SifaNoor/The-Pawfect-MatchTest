@@ -1,0 +1,34 @@
+.aboutbody {
+    /* padding: 50px 10px; */
+}
+
+.herosection {
+    background-color: #f4f1f1;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-style: normal;
+}
+
+.heroheading {
+    padding-top: 20px;
+    padding: 10px 20px;
+    margin-top: 60px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.herosubheading {
+    letter-spacing: 0.7px;
+    font-size: 15px;
+    padding: 0 50px;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: auto;
+}
+
+.heroheading.anotherheading {
+    font-size: 32px;
+}
+
