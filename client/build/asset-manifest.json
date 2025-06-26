@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.e9dd46c3.js",
-    "index.html": "/index.html",
-    "main.e9dd46c3.js.map": "/static/js/main.e9dd46c3.js.map"
+    "main.js": "/The-Pawfect-MatchTest/static/js/main.e9dd46c3.js",
+    "index.html": "/The-Pawfect-MatchTest/index.html",
+    "main.e9dd46c3.js.map": "/The-Pawfect-MatchTest/static/js/main.e9dd46c3.js.map"
   },
   "entrypoints": [
     "static/js/main.e9dd46c3.js"

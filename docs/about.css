@@ -1,6 +1,9 @@
 .aboutbody {
     /* padding: 50px 10px; */
     font-family: "Playfair Display", serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
     
 }
 
@@ -17,7 +20,7 @@
 
 .heroheading {
     padding-top: 20px;
-    padding: 10px 20px;
+    padding-bottom: 20px;
     margin-top: 60px;
     font-size: 45px;
     font-weight: bold;
@@ -33,16 +36,10 @@
     margin: auto;
 }
 
-.heroheading.anotherheading {
-    font-size: 32px;
-    margin-top: 0px;
-}
-
 .maincardsection {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
-    margin-bottom: 5rem;
     padding: 40px 20px;
 }
 
@@ -68,6 +65,20 @@
     color: hsl(0, 0%, 9%);
     margin-bottom: 1.5rem;
     position: relative;
+    font-size: 32px;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.heroheading.anotherheading::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, hsl(0, 0%, 15%) 0%, hsl(0, 0%, 32%) 100%);
+    border-radius: 2px;
 }
 
 .howitworksinfo li {
@@ -81,5 +92,81 @@
 @media (min-width: 650px) {
     .maincardsection {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Statistics Styling */
+.statisticssection {
+    background: linear-gradient(135deg, hsl(0, 0%, 15%) 0%, hsl(0, 0%, 32%) 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    margin: 20px;
+    padding: 3rem;
+    border-radius: 18px;
+    color: white;
+}
+
+.statsitem {
+    text-align: center;
+}
+
+.statnum {
+    font-family: 'Playfair Display', serif; 
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.stattext {
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* Values Section */
+.infosection {
+    padding: 25px;
+}
+
+.sectiontitle {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: hsl(0, 0%, 9%);
+    position: relative;
+}
+
+.teamvalues {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.valueitem {
+    padding: 2rem;
+    background: hsl(0, 3%, 94%);
+    border-radius: 12px;
+    border-left: 6px solid hsl(0, 0%, 15%);
+}
+
+.valuetitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: hsl(0, 0%, 9%);
+    margin-bottom: 1rem;
+}
+
+.valuetext {
+    color: hsl(0, 0%, 45%);
+    line-height: 1.6;
+}
+
+@media (min-width: 750px) {
+    .teamvalues {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
