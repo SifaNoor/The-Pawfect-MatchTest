@@ -40,7 +40,7 @@
 
 .maincardsection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
     margin-bottom: 5rem;
     padding: 40px 20px;
@@ -70,4 +70,16 @@
     position: relative;
 }
 
+.howitworksinfo li {
+    margin-bottom: 1rem; 
+    padding-left: 2rem; 
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: hsl(0, 1%, 17%);
+}
 
+@media (min-width: 650px) {
+    .maincardsection {
+        grid-template-columns: 1fr 1fr;
+    }
+}
