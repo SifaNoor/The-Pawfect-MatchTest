@@ -87,7 +87,7 @@
     position: relative;
     font-family: 'Playfair Display', serif;
     color: hsl(0, 1%, 17%);
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 @media (min-width: 650px) {
